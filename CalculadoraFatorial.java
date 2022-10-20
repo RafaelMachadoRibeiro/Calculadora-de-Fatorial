@@ -24,6 +24,10 @@ public class CalculadoraFatorial {
             fatorial = 1;
         }
         
+        else if (numero < 0){
+            fatorial = 0;
+        }
+        
         for (cont = numero; cont > 1; cont--){
             fatorial = fatorial * cont;
         } 
