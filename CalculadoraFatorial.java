@@ -1,5 +1,6 @@
 package calculadorafatorial;
 import java.util.Scanner;
+import java.text.NumberFormat;
 public class CalculadoraFatorial {
     public static void main(String[] args) {
         
@@ -13,7 +14,7 @@ public class CalculadoraFatorial {
         int numero = 0;
         int cont = 1;
         long fatorial = 1;
-        
+
         System.out.println(f1);
         System.out.println(epc);
         System.out.println(f2);
@@ -23,6 +24,9 @@ public class CalculadoraFatorial {
             fatorial = fatorial * cont;
         } 
         
-        System.out.println(f3 + numero + f4 + fatorial);
+        NumberFormat pontos = NumberFormat.getNumberInstance();
+        String fat = pontos.format(fatorial);
+        
+        System.out.println(f3 + numero + f4 + fat);
     }   
 }
