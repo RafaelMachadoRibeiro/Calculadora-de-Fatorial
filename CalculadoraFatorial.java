@@ -19,7 +19,11 @@ public class CalculadoraFatorial {
         System.out.println(epc);
         System.out.println(f2);
         numero = in.nextInt();
-                
+
+        if (numero == 0){
+            fatorial = 1;
+        }
+        
         for (cont = numero; cont > 1; cont--){
             fatorial = fatorial * cont;
         } 
